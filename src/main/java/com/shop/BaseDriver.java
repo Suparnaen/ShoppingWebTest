@@ -7,7 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -62,9 +64,13 @@ public class BaseDriver {
              driver.set(new ChromeDriver(options));
          }else if(browserName.equalsIgnoreCase("FireFox")){
             WebDriverManager.firefoxdriver().setup();
-            driver.set(new FirefoxDriver());
+            FirefoxOptions foptions = new FirefoxOptions();
+            foptions.addArguments("--headless");
+            foptions.addArguments("--no-sandbox");
+            driver.set(new FirefoxDriver(foptions));
         }else if(browserName.equalsIgnoreCase("IE")){
             WebDriverManager.iedriver().setup();
+
             driver.set(new InternetExplorerDriver());
         }
         getDriver().manage().window().maximize();
