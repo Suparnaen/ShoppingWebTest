@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -54,7 +55,11 @@ public class BaseDriver {
     public void launchApp(String browserName){
         if(browserName.equalsIgnoreCase("Chrome")){
             WebDriverManager.chromedriver().setup();
-             driver.set(new ChromeDriver());
+            ChromeOptions options= new ChromeOptions();
+            options.addArguments("--headless");
+            options.addArguments("--no-sandbox");
+             //driver = new ChromeDriver(options);
+             driver.set(new ChromeDriver(options));
          }else if(browserName.equalsIgnoreCase("FireFox")){
             WebDriverManager.firefoxdriver().setup();
             driver.set(new FirefoxDriver());
