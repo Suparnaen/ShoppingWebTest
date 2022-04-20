@@ -39,8 +39,8 @@ public class BaseDriver {
 
         try {
             prop = new Properties();
-            //FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\Configuration\\config.properties");
-            FileInputStream fis = new FileInputStream("Configuration/Config.properties");
+            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\Configuration\\Config.properties");
+            //FileInputStream fis = new FileInputStream("Configuration/Config.properties");
             prop.load(fis);
         }catch(FileNotFoundException e){
             e.printStackTrace();
