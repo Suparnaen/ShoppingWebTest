@@ -1,4 +1,4 @@
-[![Java CI with Maven](https://github.com/Suparnaen/ShoppingWebTest/actions/workflows/maven.yml)]
+[![Java CI with Maven](https://github.com/Suparnaen/ShoppingWebTest/actions/workflows/maven.yml)](https://github.com/Suparnaen/ShoppingWebTest/actions/workflows/maven.yml)
 
 The project uses the following:
 
