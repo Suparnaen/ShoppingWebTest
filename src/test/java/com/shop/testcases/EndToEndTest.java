@@ -38,7 +38,7 @@ public class EndToEndTest extends BaseDriver {
     }
 
 
-    @Test(groups = "Regression",dataProvider = "getProduct", dataProviderClass = DataProviders.class)
+    @Test(groups = {"Smoke","Regression"},dataProvider = "getProduct", dataProviderClass = DataProviders.class)
     public void endToEndTest(String productName, String qty, String size) throws Throwable {
         Log.startTestCase("endToEndTest");
         searchResultPage=indexPage.searchProduct(productName);

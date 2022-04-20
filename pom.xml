@@ -100,7 +100,7 @@
           <version>2.22.1</version>
           <configuration>
             <suiteXmlFiles>
-              <suiteXmlFile>testng_crossbrowser.xml</suiteXmlFile>
+              <suiteXmlFile>testng_smoke.xml</suiteXmlFile>
             </suiteXmlFiles>
             <systemPropertyVariables>
               <executionBrowser>${browser}</executionBrowser>

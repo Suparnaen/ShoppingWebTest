@@ -18,6 +18,7 @@
 			<!--class name="com.shop.testcases.AccountCreationPageTest"/-->
 			<class name="com.shop.testcases.SearchResultPageTest" />
 			<class name="com.shop.testcases.AddToCartPageTest" />
+			<class name="com.shop.testcases.EndToEndTest" />
 
 
 
