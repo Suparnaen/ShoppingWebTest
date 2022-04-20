@@ -8,8 +8,8 @@ import java.util.Calendar;
 
 public class NewExcelLibrary {
 
-	//public static String path = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\TestData.xlsx";
-	public static String path = "src/test/resources/TestData/TestData.xlsx";
+	public static String path = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\TestData.xlsx";
+	//public static String path = "src/test/resources/TestData/TestData.xlsx";
 
 //	public  String path;
 	public FileInputStream fis = null;
