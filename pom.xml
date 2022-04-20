@@ -8,12 +8,15 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>ShoppingWebTest</name>
-  <url>http://automationpractice.com/index.php?</url>
+
+
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <browser>Chrome</browser>
+    <url>http://automationpractice.com/index.php?</url>
   </properties>
 
   <dependencies>
@@ -99,6 +102,11 @@
             <suiteXmlFiles>
               <suiteXmlFile>testng_smoke.xml</suiteXmlFile>
             </suiteXmlFiles>
+            <systemPropertyVariables>
+              <executionBrowser>${browser}</executionBrowser>
+              <appURL>${url}</appURL>
+            </systemPropertyVariables>
+
           </configuration>
         </plugin>
         <plugin>
