@@ -1,4 +1,4 @@
-Languages and Frameworks
+[![Java CI with Maven](https://github.com/Suparnaen/ShoppingWebTest/actions/workflows/maven.yml)]
 
 The project uses the following:
 
