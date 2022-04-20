@@ -1,5 +1,5 @@
-![Java CI with Maven](https://github.com/Suparnaen/ShoppingWebTest/actions/workflows/maven.yml)](https://github.com/Suparnaen/ShoppingWebTest/actions/workflows/maven.yml/badge.svg)
-![example workflow](https://github.com/Suparnaen/ShoppingWebTest/actions/workflows/maven.yml/badge.svg)
+![Java CI with Maven](https://github.com/Suparnaen/ShoppingWebTest/actions/workflows/maven.yml/badge.svg)
+
 
 The project uses the following:
 
